@@ -4,6 +4,7 @@ html/Callbacks/Gravatar/Ticket/Elements/ShowRequestor/AboutThisUser
 html/Callbacks/Gravatar/User/Elements/Portlets/ExtraInfo/BeforeExtraInfo
 html/Callbacks/Gravatar/User/Prefs.html/FormLeftColumn
 html/Elements/Gravatar
+html/Elements/ShowUser
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm

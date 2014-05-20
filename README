@@ -1,3 +1,9 @@
+**Important**
+
+This a <s>hack</s> customized fork of the original extension that display the gravatar in the user info. Currently compatible (and tested) with **RT 4.2.3.**
+
+----------
+
 NAME
     RT::Extension::Gravatar - Adds gravatar images to rt
 
