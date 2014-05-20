@@ -4,52 +4,54 @@ This a <s>hack</s> customized fork of the original extension that display the gr
 
 ----------
 
-NAME
-    RT::Extension::Gravatar - Adds gravatar images to rt
+**NAME**
+RT::Extension::Gravatar - Adds gravatar images to rt
 
-DESCRIPTION
-    This Plugin adds an gravatar image to the following places:
+**DESCRIPTION**
+This Plugin adds an gravatar image to the following places:
 
-    More about the requestors widget
-    Modify user page
-    About me (Preferences)
-    User Summary
+- More about the requestors widget
+- Modify user page
+- About me (Preferences)
+- User Summary
+- User info
 
-INSTALLATION
+**INSTALLATION**
+
     perl Makefile.PL
     make
     make install
-    Edit your /opt/rt4/etc/RT_SiteConfig.pm
-        Add this line:
 
-            Set(@Plugins, qw(RT::Extension::Gravatar));
+Edit your */opt/rt4/etc/RT_SiteConfig.pm* and add this line:
 
-        or add "RT::Extension::Gravatar" to your existing @Plugins line.
+    Set(@Plugins, qw(RT::Extension::Gravatar));
 
-    Clear your mason cache
-            rm -rf /opt/rt4/var/mason_data/obj/*
+or add "RT::Extension::Gravatar" to your existing @Plugins line.
 
-    Restart your webserver
+ Clear your mason cache
+ 
 
-METHODS ADDED TO OTHER CLASSES
-  RT::User
-   GravatarUrl
-    Return the gravatar image url of the user.
+    rm -rf /opt/rt4/var/mason_data/obj/*
 
-   HasGravatar
-    Return true if the user has an gravatar image.
+Restart your webserver
 
-AUTHOR
-    Christian Loos <cloos@netsandbox.de>
+**METHODS ADDED TO OTHER CLASSES**
 
-LICENCE AND COPYRIGHT
-    Copyright (C) 2010-2013, Christian Loos.
+      RT::User
+       GravatarUrl([Size], [Design])
+        Return the gravatar image url of the user.
+    
+       HasGravatar
+        Return true if the user has an gravatar image.
 
+**AUTHOR**
+Christian Loos <cloos@netsandbox.de>
+
+**LICENCE AND COPYRIGHT**
+Copyright (C) 2010-2013, Christian Loos.
     This library is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
 
-SEE ALSO
+**SEE ALSO**
     <http://bestpractical.com/rt/>
-
     <http://gravatar.com/>
-
